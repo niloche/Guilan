@@ -1,0 +1,154 @@
+body {
+    background:linear-gradient(to bottom, #e9e9ea 22%, #a3b18a 78%); 
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+ 
+}
+
+@font-face {
+    font-family: 'costum';
+    src: url("/Didot Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-between;
+    z-index: 99;
+    
+       
+}
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+.navigation a {
+    display: flex;
+    text-decoration: none;
+    color: #588157;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover , 
+.navigation a.active{
+    background:#588157 ;
+    color: #fefae0;
+}
+
+.banner{
+    height:52vw;
+    z-index: 1;
+    width: 100vw;
+    overflow: hidden;
+    color: #fefae0;
+    font-size: 20px;
+    font-family: 'costum';
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+   
+}
+
+#mountain{
+   width: 100%;
+   position: absolute; 
+   top:0;
+   right: 0;
+   left: 0;
+   bottom: 0; 
+   object-fit: contain;    
+   /* width: 100%; */
+}
+
+#cottage{
+    width: 100%;
+    object-fit: contain;
+   position: absolute; 
+   top:0;
+   right: 0;
+   left: 0;
+   bottom: 0; 
+   z-index: 3;
+}
+
+
+.text{
+    
+    width: 100%;
+    text-shadow: 2px 1px 10px white;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    top: 125px;
+}
+
+
+#main{
+    padding: 10px;
+    z-index: 100;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'costum';
+    font-size: 30px;
+    font-weight: 900;
+    color: #fefae0;
+    text-align: center;
+
+}
+#nav-wrapper{
+  
+    font-family: 'costum';
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: flex-start;
+    margin-bottom: 1000px;
+    background: linear-gradient (135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0,0.37);
+    color: #5C5E25;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+        url("/condensation_1642_1002_80_c1.jpg");
+    background-size: cover; */
+    background-blend-mode:hue;
+    
+
+}  
+
+#food,#Rain,#castle{
+    position: ;
+     color: #544f39;
+     font-size: 12px;
+     font-family: 'costum';
+     padding: 10px 10px;
+       
+}
+.three{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'costum';
+}
+
